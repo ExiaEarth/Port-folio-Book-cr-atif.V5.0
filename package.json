@@ -1,0 +1,14 @@
+{
+  "name": "port-foliov5",
+  "version": "1.0.0",
+  "description": "Port-folio and Book créatif Version 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc.Lemer",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.65.1"
+  }
+}
