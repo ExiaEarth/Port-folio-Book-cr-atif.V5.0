@@ -10,19 +10,34 @@
   --colorpageBase: rgba(255, 255, 255, 0.729);
 }
 
+@media screen and (max-width: 1170px) {
+  body header ul li a {
+    color: red;
+  }
+  .fragment {
+    width: 1170px;
+  }
+  #accueille {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 body .container {
   height: 100vh;
   width: 100vw;
   display: flex;
-  background-image: url(/Img/html-tagst.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 body header {
+  border: solid rgb(54, 172, 18) 10px;
   height: 100%;
   width: 12%;
-  border-radius: 20%;
+}
+body header ul li {
+  list-style: none;
+}
+body header ul li a {
+  text-decoration: none;
 }
 body main {
   border: solid rgb(0, 38, 255) 1px;
@@ -33,6 +48,12 @@ body .fragment {
   border: solid rgb(255, 251, 0) 1px;
   height: 100%;
   width: 100%;
+}
+body #accueille {
+  background-image: url(/Img/html-tagst.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

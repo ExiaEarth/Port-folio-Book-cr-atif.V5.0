@@ -9,23 +9,53 @@
 :root {
   --colorpageBase: rgba(255, 255, 255, 0.729);
 }
-
+//forma gsm
+@media screen and (max-width: 1170px) {
+  body {
+    // max-width: 1170%;
+    header {
+      ul {
+        li {
+          a {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .fragment {
+    width: 1170px;
+  }
+  #accueille {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+//forma pc
 body {
   .container {
     height: 100vh;
     width: 100vw;
     display: flex;
     // background-color: red;
-    background-image: url(/Img/html-tagst.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   header {
-    // border: solid rgb(172, 105, 18) 10px;
+    // transform: translateX(100px);
+
+    border: solid rgb(54, 172, 18) 10px;
     height: 100%;
     width: 12%;
-    border-radius: 20%;
+    // border-radius: 20%;
+    ul {
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          // color: aqua;
+        }
+      }
+    }
   }
   main {
     border: solid rgb(0, 38, 255) 1px;
@@ -38,6 +68,12 @@ body {
     height: 100%;
     width: 100%;
     // display: block;
+  }
+  #accueille {
+    background-image: url(/Img/html-tagst.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   //   .fragment:nth-child(1) {
   //   }
