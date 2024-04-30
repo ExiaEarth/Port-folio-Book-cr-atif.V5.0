@@ -8,6 +8,7 @@
 
 :root {
   --colorpageBase: rgba(255, 255, 255, 0.729);
+  --blackColor: rgba(0, 0, 0, 0, 75);
 }
 
 @media screen and (max-width: 1170px) {
@@ -29,15 +30,34 @@ body .container {
   display: flex;
 }
 body header {
-  border: solid rgb(54, 172, 18) 10px;
   height: 100%;
   width: 12%;
 }
+body header ul {
+  height: 955.2px;
+  background-color: var(--colorpageBase);
+}
+body header ul :hover {
+  background-color: aquamarine;
+}
 body header ul li {
+  display: flex;
   list-style: none;
+  height: 191.04px;
+  justify-content: space-between;
+  align-items: center;
 }
 body header ul li a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: var(--blackColor);
+  border: solid rgb(57, 220, 20) 1px;
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+}
+body header ul li a span {
+  text-align: center;
 }
 body main {
   border: solid rgb(0, 38, 255) 1px;
@@ -54,6 +74,18 @@ body #accueille {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+body .fragment:nth-child(2) {
+  background-color: red;
+}
+body .fragment:nth-child(3) {
+  background-color: rgb(0, 242, 255);
+}
+body .fragment:nth-child(4) {
+  background-color: rgb(255, 242, 0);
+}
+body .fragment:nth-child(5) {
+  background-color: rgb(255, 0, 187);
 }
 
 /*# sourceMappingURL=style.css.map */
