@@ -9,6 +9,11 @@
 :root {
   --colorpageBase: rgba(255, 255, 255, 0.729);
   --blackColor: rgba(0, 0, 0, 0, 75);
+  --colorBorderNavBar: #2d292a;
+  --colorNavBar: #2d292a;
+  --colorHover: aquamarine;
+  --colorTextH1: #fbf384;
+  --colorfond: #3c3839;
 }
 
 @media screen and (max-width: 1170px) {
@@ -32,13 +37,11 @@ body .container {
 body header {
   height: 100%;
   width: 12%;
+  color: white;
 }
 body header ul {
   height: 955.2px;
   background-color: var(--colorpageBase);
-}
-body header ul :hover {
-  background-color: aquamarine;
 }
 body header ul li {
   display: flex;
@@ -46,26 +49,35 @@ body header ul li {
   height: 191.04px;
   justify-content: space-between;
   align-items: center;
+  border: solid var(--colorBorderNavBar) 1px;
+  background-color: var(--colorBorderNavBar);
+}
+body header ul li :hover {
+  background-color: var(--colorHover);
 }
 body header ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--blackColor);
-  border: solid rgb(57, 220, 20) 1px;
+  border: solid black 0.01px;
   font-size: 25px;
   width: 100%;
-  height: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  background-color: gray;
 }
 body header ul li a span {
-  text-align: center;
+  display: flexbox;
+  margin-top: 39.52px;
+  height: 26px;
+  align-items: center;
 }
 body main {
-  border: solid rgb(0, 38, 255) 1px;
   width: 100%;
   overflow-y: scroll;
 }
 body .fragment {
-  border: solid rgb(255, 251, 0) 1px;
   height: 100%;
   width: 100%;
 }
@@ -74,9 +86,23 @@ body #accueille {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+}
+body #accueille .AccuH1 {
+  margin-top: 410px;
+  margin-left: 250px;
+  height: 35px;
+}
+body #accueille .AccuH1 h1 {
+  text-transform: uppercase;
+  color: var(--colorTextH1);
 }
 body .fragment:nth-child(2) {
-  background-color: red;
+  background-color: var(--colorfond);
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
 }
 body .fragment:nth-child(3) {
   background-color: rgb(0, 242, 255);
@@ -86,6 +112,32 @@ body .fragment:nth-child(4) {
 }
 body .fragment:nth-child(5) {
   background-color: rgb(255, 0, 187);
+}
+body .profil {
+  border: solid rgb(81, 255, 0) 1px;
+  height: 100%;
+  width: 40%;
+}
+body .btnCent {
+  border: solid rgb(235, 192, 2) 1px;
+  height: 100%;
+  width: 10%;
+  display: flex;
+}
+body .btn1 {
+  border: solid rgb(81, 255, 0) 1px;
+  width: 100%;
+  height: 50px;
+  margin-top: 400px;
+}
+body .btn1 button {
+  height: 100%;
+  width: 100%;
+}
+body .zoneCv {
+  border: solid rgb(0, 255, 208) 1px;
+  width: 40%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
