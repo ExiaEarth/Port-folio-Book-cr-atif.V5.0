@@ -89,27 +89,21 @@ body {
   }
   main {
     width: 100%;
-    // display: flex;
     overflow-y: scroll;
   }
   .fragment {
-    // border: solid rgb(255, 251, 0) 1px;
     height: 100%;
     width: 100%;
-    // display: block;
   }
   #accueille {
     background-image: url(/Img/html-tagst.jpg);
-    // background-color: rgb(60, 255, 0);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     .AccuH1 {
       margin-top: 410px;
-      // text-align: center;
       margin-left: 250px;
-      // border: solid red 1px;
       height: 35px;
       h1 {
         text-transform: uppercase;
@@ -140,16 +134,32 @@ body {
     width: 40%;
   }
   .btnCent {
-    border: solid rgb(235, 192, 2) 1px;
+    // border: solid rgb(235, 192, 2) 1px;
     height: 100%;
     width: 10%;
     display: flex;
   }
-  .btn1 {
-    border: solid rgb(81, 255, 0) 1px;
+  #btnOpen {
+    display: block;
+    :hover {
+      background-color: var(--colorHover);
+    }
+    button {
+      text-transform: uppercase;
+    }
+  }
+  #btnClose {
+    display: none;
+    button {
+      text-transform: uppercase;
+    }
+    :hover {
+      background-color: var(--colorHover);
+    }
+  }
+  .btnPres {
     width: 100%;
     height: 50px;
-    // align-items: center;
     margin-top: 400px;
     button {
       height: 100%;
@@ -157,8 +167,13 @@ body {
     }
   }
   .zoneCv {
-    border: solid rgb(0, 255, 208) 1px;
     width: 40%;
     height: 100%;
+    // display: none;
+    visibility: hidden;
+    embed {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
