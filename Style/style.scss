@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+// var de color
 :root {
   --colorpageBase: rgba(255, 255, 255, 0.729);
   --blackColor: rgba(0, 0, 0, 0, 75);
@@ -14,6 +14,7 @@
   --colorHover: aquamarine;
   --colorTextH1: #fbf384;
   --colorfond: #3c3839;
+  --colorlien: #fbf384;
 }
 //forma gsm
 @media screen and (max-width: 1170px) {
@@ -42,6 +43,7 @@
 }
 //forma pc
 body {
+  overflow-y: hidden;
   .container {
     height: 100vh;
     width: 100vw;
@@ -52,13 +54,13 @@ body {
     width: 12%;
     color: white;
     ul {
-      height: 955.2px;
+      height: 955px;
       background-color: var(--colorpageBase);
 
       li {
+        height: 191.04px;
         display: flex;
         list-style: none;
-        height: 191.04px;
         justify-content: space-between;
         align-items: center;
         border: solid var(--colorBorderNavBar) 1px;
@@ -67,20 +69,20 @@ body {
           background-color: var(--colorHover);
         }
         a {
+          height: 50%;
+          width: 100%;
+          background-color: gray;
           text-decoration: none;
           text-transform: uppercase;
           color: var(--blackColor);
           border: solid black 0.01px;
           font-size: 25px;
-          width: 100%;
-          height: 50%;
           text-align: center;
           display: flex;
-          background-color: gray;
           span {
-            display: flexbox;
-            margin-top: 39.52px;
             height: 26px;
+            display: flex;
+            margin-top: 39.52px;
             align-items: center;
           }
         }
@@ -90,6 +92,7 @@ body {
   main {
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   .fragment {
     height: 100%;
@@ -102,36 +105,49 @@ body {
     background-size: cover;
     display: flex;
     .AccuH1 {
+      height: 35px;
       margin-top: 410px;
       margin-left: 250px;
-      height: 35px;
       h1 {
         text-transform: uppercase;
         color: var(--colorTextH1);
       }
     }
   }
+  // presentation
   .fragment:nth-child(2) {
     background-color: var(--colorfond);
-    // border: solid red 1px;
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
   }
+  // competence
   .fragment:nth-child(3) {
-    background-color: rgb(0, 242, 255);
+    background-color: var(--colorfond);
+    border: solid var(--colorfond) 1px;
   }
+  // projets
   .fragment:nth-child(4) {
-    background-color: rgb(255, 242, 0);
+    background-color: var(--colorfond);
   }
+  // contact/footer
   .fragment:nth-child(5) {
-    background-color: rgb(255, 0, 187);
+    background-color: var(--colorfond);
   }
+  // partie presentation
   .profil {
-    border: solid rgb(81, 255, 0) 1px;
-    height: 100%;
+    height: 90%;
     width: 40%;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .imgprofil {
+    display: flex;
+    height: 50%;
+    img {
+      margin-left: 100px;
+    }
   }
   .btnCent {
     // border: solid rgb(235, 192, 2) 1px;
@@ -175,5 +191,152 @@ body {
       height: 100%;
       width: 100%;
     }
+  }
+  // fin de partie presentation
+  // partie compétence
+  .btGroup {
+    // border: solid red 1px;
+    height: 20%;
+    color: white;
+    margin-top: 80px;
+  }
+  .titelCompt {
+    width: 110px;
+    height: 50px;
+    text-transform: uppercase;
+  }
+  .tablCompt {
+    border: solid rgb(228, 221, 221) 2px;
+    height: 40%;
+    width: 80%;
+    margin-left: 120px;
+    color: white;
+    ul {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: var(--colorBorderNavBar);
+
+      li {
+        background-color: grey;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        spam {
+          width: 100%;
+          height: 40%;
+          align-items: center;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  // fin de competence
+  // partie des projets
+  .containerProjet {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .projet {
+      box-shadow: 5px 5px 8px var(--colorlien);
+      border-radius: 1%;
+      height: 60%;
+      width: 20%;
+      position: relative;
+      z-index: 10;
+      margin-top: 2%;
+      margin-left: 2%;
+      .header {
+        background-color: darkgrey;
+        color: white;
+        transform: translateX(12.5rem);
+        width: 40%;
+      }
+      .main {
+        height: 96%;
+        opacity: 1;
+        color: white;
+        .containerData {
+          h3 {
+            text-align: center;
+            text-transform: uppercase;
+          }
+          div {
+            transform: translateY(35rem);
+            font-size: 1.3rem;
+          }
+        }
+      }
+      .footer {
+        transform: translateY(0.5rem);
+        color: var(--colorlien);
+        a {
+          color: var(--colorlien);
+        }
+      }
+    }
+    .projet:nth-child(1) {
+      background-image: url(/Img/Mon\ premier\ site\ web.png);
+      background-repeat: no-repeat;
+      background-size: 20vw auto;
+    }
+    .projet:nth-child(2) {
+      background-image: url(/Img/React_AppFinFormation.png);
+      background-repeat: no-repeat;
+      background-size: 22vw auto;
+    }
+    .projet:nth-child(3) {
+      background-image: url(/Img/porteFolio\ Marc\ Lemer.png);
+      background-repeat: no-repeat;
+      background-size: 18vw auto;
+    }
+  }
+  // fin des partie projets
+  // partie contact&footer
+  .maincont {
+    height: 94.5%;
+  }
+  .titleContact {
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+  .lienCont {
+    height: 94%;
+    ul {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      li {
+        height: 50%;
+        width: 25%;
+        list-style: none;
+        margin-top: 100px;
+        justify-content: center;
+        .imgContact {
+          margin-left: 50px;
+          height: 80%;
+          width: 80%;
+        }
+        a {
+          color: aliceblue;
+          display: flex;
+          transform: translateY(2rem) translateX(11rem);
+          width: 25%;
+        }
+      }
+    }
+  }
+  footer {
+    height: 50px;
+    background-color: var(--colorlien);
   }
 }

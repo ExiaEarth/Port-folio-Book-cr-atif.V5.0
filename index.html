@@ -45,27 +45,185 @@
              </div>
         </header>
         <main>
+            <!-- Ici est la 1er pages avec text et Img de fond -->
             <div class="fragment" id="accueille">
                 <div class="AccuH1">
                     <h1>bienvenue sur le portefolio/bookcreatif de marc lemer</h1>
                 </div>
             </div>
+            <!-- Courte présentation de chemin et btn qui fait ouvrire le Cv -->
             <div class="fragment" id="presentation">
-                <div class="profil"></div>
+                <div class="profil">
+                    <div class="imgprofil">
+                        <img src="Img/myProfil.jpg" alt="ma photo" srcset="">
+                    </div>
+                    <div>
+                        Bonjour,<br><br>Je me nomme Marc Lemer et au moment ou j'écris ces lignes j'ai 27 ans.<br>J'ai décidée de commencée ma présentation avec mes années du secondaire en premier lieu.<br>j'ai étudiée à l'institut technique de Namur dans la section électricien en batiment/industriel en professionnel jusqu'a la 7éme année en 2019.<br><br>En 2021 j'ai décicée de changée de voie ,je me suis dirigée en premier lieu dans une formation en "découvert des métiers informatique" de chez Interface3namur.<br><br>En 2022 ,j'ai continuée avec une formation en "Développeur Web Javascript FullStack"  chez Interface3namur.<br><br> En 2023 j'ai suivie une formation(module)Web designer-Ux/Ui Studio aux CEPEGRA.
+                    </div>
+                </div>
                 <div class="btnCent">
-                    <div class="btnPres" id="btnOpen"><button>ouverture</button></div>
-                    <div class="btnPres" id="btnClose"><button>fermeture</button></div>
+                    <div class="btnPres" id="btnOpen"><button>ouverture Cv</button></div>
+                    <div class="btnPres" id="btnClose"><button>fermeture Cv</button></div>
                 </div>
                 <div class="zoneCv" id="zoneCv">
                     <embed src="/fichierPerso/Cv_Marc_Lemer_Dev.pdf" type="application/pdf">
                 </div>
             </div>
-            <div class="fragment" id="competence">c</div>
-            <div class="fragment" id="projets">d</div>
-            <div class="fragment" id="contact">
-                <div>
-                    <footer>azertyuiço</footer>
+            <!-- liste de competence front/back/divers -->
+            <div class="fragment" id="competence">
+                <!-- front-end -->
+                <div class="btGroup">
+                    <div class="titelCompt">
+                        <h3>front-end</h3>
+                    </div>
+                    <div class="tablCompt">
+                        <ul>
+                            <li>
+                                <spam>html</spam>
+                            </li>
+                            <li>
+                                <spam>css&scss</spam>
+                            </li>
+                            <li>
+                                <spam>react.js</spam>
+                            </li>
+                            <li>
+                                <spam>javascript</spam>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- back-end -->
+                <div class="btGroup">
+                    <div class="titelCompt">
+                        <h3>back-end</h3>
+                    </div>
+                    <div class="tablCompt">
+                        <ul>
+                            <li>
+                                <spam>mongo.db</spam>
+                            </li>
+                            <li>
+                                <spam>express.js</spam>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Divers -->
+                <div class="btGroup">
+                    <div class="titelCompt">
+                        <h3>divers</h3>
+                    </div>
+                    <div class="tablCompt">
+                        <ul>
+                            <li>
+                                <spam>Base linux</spam>
+                            </li>
+                            <li>
+                                <spam>base apache</spam>
+                            </li>
+                            <li>
+                                <spam>gestion projet agile</spam>
+                            </li>
+                            <li>
+                                <spam>sql(mysql)</spam>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+            <!-- cards de projets -->
+            <div class="fragment" id="projets">
+                <div class="containerProjet">
+                    <!-- 1er Projet -->
+                    <div class="projet">
+                        <div class="header">
+                            <spam>19</spam>
+                            <spam>Mai</spam>
+                            <spam>2022</spam>
+                        </div>
+                        <div class="main">
+                            <div class="containerData">
+                                <h3>Site découverte </h3>
+                                <div>Se projet est un site vitrine qui a été crée lors du commencement de la formation en "découvert des métiers informatique"chez Interface3namur.<br><br> 
+                                Il a pour but de montrée et expliquée les différents outils pérmetant la création d'un site Web.<br>
+                                Il a été crée avec de Html, du css et du Javascript.</div>
+                            </div>
+                        </div>
+                        <div  class="footer">Lien => <a id="footer1" href="https://exiaearth.github.io/Mon-premier-site-avec-Interface3Namur./index.html">Direction Github page</a></div>
+
+                        
+                    </div>
+                    <!-- 2éme Projet -->
+                    <div class="projet">
+                        <div class="header">
+                            <spam>14</spam>
+                            <spam>Septembre</spam>
+                            <spam>2022</spam>
+                        </div>
+                        <div class="main">
+                            <div class="containerData">
+                                <h3>Projet de fin de formation </h3>
+                                <div>Se projet a été crée pour la fin de la formation "Développeur Web Javascript FullStack" chez Interface3namur.<br>Il à été crée avec du React.js et du css(scss).Il est accompagnée dans back-end.<br>Sur se site vitrine ,l'utilisateur pouvais , s'inscrire ,se connecter /déconecter,voir les filmes en salle,prochaine sortie,avant premier.Il avais aussi la possibiliée de réserver une salle pour un évenement.</div>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            Lien front => <a href="https://github.com/ExiaEarth/cinemaFront/tree/main/cinema-react">Front-End</a>
+                            lien back-end => <a href="https://github.com/ExiaEarth/cinemaBackProjet">back-end</a>
+                        </div>
+                    </div>
+                    <!-- 3éme Projet -->
+                    <div class="projet">
+                        <div class="header">
+                            <spam>31</spam>
+                            <spam>Mars</spam>
+                            <spam>2023</spam>
+                        </div>
+                        <div class="main">
+                            <div class="containerData">
+                                <h3>porteFolio </h3>
+                                <div>Précedent porteFolio<br> La 4 Version du portefolio qui a été crée originellement chez Interface3namur et qui a été quasiment retravaillé dans sa totalité en 2023.<br> Sont but est de simplement montrée les capacitées en ma possession.</div>
+                            </div>
+                        </div>
+                        <div class="footer">Lien Github =>
+                             <a href="https://github.com/ExiaEarth/PorteFolioV4">
+                                Repositorie Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- lien de contact &footer -->
+            <div class="fragment" id="contact">
+                <div class="maincont">
+                    <div class="titleContact">
+                        <span>retrouvée moi sur....</span>
+                    </div>
+                    <div class="lienCont">
+                        <ul>
+                            <li>
+                                <span><img class="imgContact" src="img/facebook.png" alt="" srcset=""></span>
+                                <a href="https://www.facebook.com/marc.lemer/">#Marc Lemer</a>
+                            </li>
+                            <li>
+                                <span><img class="imgContact" src="img/LinkedIn-Symbole.png" alt="" srcset=""></span>
+                                <a href="https://www.linkedin.com/in/marc-lemer-4948ab222/"> #Marc Lemer</a>
+
+                            </li>
+                            <li>
+                                <span><img class="imgContact" src="img/github.png" alt="" srcset=""></span>
+                                <a href="https://github.com/ExiaEarth">#ExiaEarth</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <footer>
+                    <h2> &copy;Marc Lemer</h2>
+                    <p>Portefolio/bookcréatif 2024</p>
+                </footer>
+
             </div>
 
             <!-- <footer class="fragment">footer</footer> -->
