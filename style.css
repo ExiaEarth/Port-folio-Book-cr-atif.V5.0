@@ -87,7 +87,7 @@ body .fragment {
   width: 100%;
 }
 body #accueille {
-  background-image: url(/Img/html-tagst.jpg);
+  background-image: url(Img/html-tagst.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -254,17 +254,17 @@ body .containerProjet .projet .footer a {
   color: var(--colorlien);
 }
 body .containerProjet .projet:nth-child(1) {
-  background-image: url(/Img/Mon\ premier\ site\ web.png);
+  background-image: url(Img/Mon_premier_site.png);
   background-repeat: no-repeat;
   background-size: 20vw auto;
 }
 body .containerProjet .projet:nth-child(2) {
-  background-image: url(/Img/React_AppFinFormation.png);
+  background-image: url(Img/React_AppFinFormation.png);
   background-repeat: no-repeat;
   background-size: 22vw auto;
 }
 body .containerProjet .projet:nth-child(3) {
-  background-image: url(/Img/porteFolio\ Marc\ Lemer.png);
+  background-image: url(Img/portefolioVquatre.png);
   background-repeat: no-repeat;
   background-size: 18vw auto;
 }
